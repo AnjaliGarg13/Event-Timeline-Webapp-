@@ -51,6 +51,10 @@ html,body{
     padding-left: 3rem;
     padding-bottom: 3rem;
 }
+.card img{
+    height:350px;
+    width: 500px;
+}
 .padding{
     padding-bottom: 2rem;
 }
