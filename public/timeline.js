@@ -30,27 +30,27 @@ function createEventCard(Event){
             <br>
             <br>
             <div class="date-label ">
-                <span class="month"> feb</span>
-                <span class="date-number">19</span>
+                <span class="month">${Event.startdate.month} </span>
+                <span class="date-number">${Event.startdate.date}</span>
             </div>
         </div>
         <div class="details col-10" style="color: grey">
                 <!-- facebook link of event -->
                 <h2 class="event-title" align="left">
-                    <a href="#">Orientation</a></h2>
-                <p class="calender"><i class="fa fa-calender" aria-hidden="true"></i>  Date of Event</p>
-                <p class="time"><i class="far fa-clock"></i>  Duration </p>
-                <p class="location"><i class="fa fa-map-marker"></i>  Location</p>
+                    <a href="${Event.link}">${Event.name}</a></h2>
+                <p class="calender"><i class="fa fa-calender" aria-hidden="true"></i> ${Event.date}</p>
+                <p class="time"><i class="far fa-clock"></i>${Event.enddate-Event.startdate}</p>
+                <p class="location"><i class="fa fa-map-marker"></i>  ${Event.location}</p>
             <div class="row">
                 <div class="col-1"></div>
                 <div class="col-8">
                     <div class="organiser row">
-                        <div class="col-2"> Organiser :</div>
-                        <div class="col-6">organiser details</div>
+                        <div class="col-2"> Organiser</div>
+                        <div class="col-6"> Details</div>
                     </div>
                     <div class="organiser row">
-                        <div class="col-2"> Details :</div>
-                        <div class="col-6"> details</div>
+                        <div class="col-2"> ${Event.orgSociety}</div>
+                        <div class="col-6"> ${Event.details}</div>
                     </div>
                 </div>
             </div>
