@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NSIT's social timeline</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation bar -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+        <!-- link to official site-->
+        <a class="navbar-brand" href="http://www.nsit.ac.in/">
+            <img src="img/logo.png" height="40%" width="40%">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon" ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#societies">Societies</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#timeline">Timeline</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="public/Signup.html">Signup</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="public/loginStudents.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Image Slider  -->
+<div id="slides" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+        <li data-target="#slides" data-slide-to="0" class="active"></li>
+     <!--   <li data-target="#slides" data-slide-to="1" ></li>
+        <li data-target="#slides" data-slide-to="2" ></li>  -->
+    </ul>
+    <div class="carousel-inner">
+        <div class="carousel-item active" >
+            <img src="img/home.png" >
+            <div class="carousel-caption">
+                <h1 class="display-2">NSIT's TIMELINE</h1>
+                <h3>Get to know about all the events in college at a single place</h3>
+                <button type="button" class="btn btn-outline-light btn-lg">Login</button>
+                <button type="button" class="btn btn-primary btn-lg">Get Started</button>
+            </div>
+        </div>
+        <div class="carousel-item" >
+            <img src="img/home2.jpg" >
+        </div>
+        <div class="carousel-item">
+            <img src="img/home3.jpg"  >
+        </div>
+    </div>
+</div>
+<a class="carousel-control-prev" href="#slides" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+</a>
+<a class="carousel-control-next" href="#slides" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+</a>
+
+<!--- Jumbotron -->
+<div class="container-fluid" >
+    <div class="row jumbotron">
+        <div >
+            <p class="lead">NSIT has a strong culture of student activities. Numerous societies are active on campus that aim to inculcate team values & nurture talent within students. These clubs attract students from all walks of life, cutting across departments. This gives students a chance to experiment with their interests and hobbies. </p>
+        </div>
+    </div>
+</div>
+
+<!--- Meet the Societies -->
+<div class="container-fluid padding" id="societies">
+    <div class="row welcome text-center">
+        <div class="col-12">
+            <h1 class="display-4">Meet the Different Societies</h1>
+        </div>
+        <hr style="...">
+    </div>
+</div>
+
+<!--- Cards -->
+<div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-md-4 padding cardSection">
+            <div class="card">
+                <img class="card-img-top" src="img/team1.png">
+                <div class="card-body">
+                    <h4 class="card-title">Recreational Clubs</h4>
+                    <p class="card-text">   ------------------------------------------             </p>
+                    <a href="#" class="btn btn-outline-secondary">get to know more</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 padding cardSection">
+            <div class="card">
+                <img class="card-img-top" src="img/team1.png">
+                <div class="card-body">
+                    <h4 class="card-title">Technical Societies</h4>
+                    <p class="card-text">   ------------------------------------------             </p>
+                    <a href="#" class="btn btn-outline-secondary">get to know more</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 padding cardSection">
+            <div class="card">
+                <img class="card-img-top" src="img/team1.png">
+                <div class="card-body">
+                    <h4 class="card-title">Literary Clubs</h4>
+                    <p class="card-text">   ------------------------------------------             </p>
+                    <a href="#" class="btn btn-outline-secondary">get to know more</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 padding cardSection">
+            <div class="card">
+                <img class="card-img-top" src="img/team1.png">
+                <div class="card-body">
+                    <h4 class="card-title">Non-Technical Societies</h4>
+                    <p class="card-text">   ------------------------------------------             </p>
+                    <a href="#" class="btn btn-outline-secondary">get to know more</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 padding cardSection">
+            <div class="card">
+                <img class="card-img-top" src="img/team1.png">
+                <div class="card-body">
+                    <h4 class="card-title">Automotive Clubs</h4>
+                    <p class="card-text">   ------------------------------------------             </p>
+                    <a href="#" class="btn btn-outline-secondary">get to know more</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 padding cardSection">
+            <div class="card">
+                <img class="card-img-top" src="img/team1.png">
+                <div class="card-body">
+                    <h4 class="card-title">Community Service Initiatives</h4>
+                    <p class="card-text">   ------------------------------------------             </p>
+                    <a href="#" class="btn btn-outline-secondary">get to know more</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 "></div>
+        <div class="col-md-4 padding cardSection">
+            <div class="card">
+                <img class="card-img-top" src="img/team1.png">
+                <div class="card-body">
+                    <h4 class="card-title">Websites</h4>
+                    <p class="card-text">   ------------------------------------------             </p>
+                    <a href="#" class="btn btn-outline-secondary">get to know more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- header to timeline -->
+<div class="container-fluid padding" id="timeline">
+    <div class="row welcome text-center">
+        <div class="col-12">
+            <h1 class="display-4">Events </h1>
+        </div>
+        <hr style="width: 75% " >
+        <div  class="col-12">
+            <button type="button" href="#" class="btn btn-outline-secondary ">Competitions</button>
+            <button type="button" href="#" class="btn btn-outline-secondary">SIG's</button>
+            <button type="button" href="#" class="btn btn-outline-secondary">Talks</button>
+            <button type="button" href="#" class="btn btn-outline-secondary">Events</button>
+            <button type="button" href="#" class="btn btn-outline-secondary">Orientation</button>
+            <button type="button" href="#" class="btn btn-outline-secondary">Recruitment</button>
+            <button type="button" href="#" class="btn btn-outline-secondary">Forms</button>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+
+<!-- Timeline -->
+<div class="row">
+<div class="col-1"></div>
+<div class="events col-10 text-center">
+    <div class="event-item row padding">
+        <div class="col-2 text-center">
+            <br>
+            <br>
+            <br>
+            <div class="date-label ">
+                <span class="month"> feb</span>
+                <span class="date-number">19</span>
+            </div>
+        </div>
+        <div class="details col-10" style="color: grey">
+                <!-- facebook link of event -->
+                <h2 class="event-title" align="left">
+                    <a href="#">Orientation</a></h2>
+                <p class="calender"><i class="fa fa-calender" aria-hidden="true"></i>  Date of Event</p>
+                <p class="time"><i class="far fa-clock"></i>  Duration </p>
+                <p class="location"><i class="fa fa-map-marker"></i>  Location</p>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-8">
+                    <div class="organiser row">
+                        <div class="col-2"> Organiser :</div>
+                        <div class="col-6">organiser details</div>
+                    </div>
+                    <div class="organiser row">
+                        <div class="col-2"> Details :</div>
+                        <div class="col-6"> details</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+    <div class="col-1"></div>
+</div>
+
+
+
+
+
+
+</body>
+</html>
