@@ -1,3 +1,5 @@
+//js file for adding an event
+
 $(function(){
     let eventName=$('#eventname')
     let orgSociety=$('#organiser')

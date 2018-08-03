@@ -1,3 +1,5 @@
+// for functions from complete js files i.e. index.js and add-events.js
+
 function addEventNSIT(name,organiser,details,starttime,startdate,endtime,enddate,location,link,done) {
     $.post('/api/event',{
         name:name,
