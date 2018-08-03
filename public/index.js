@@ -2,11 +2,11 @@
 //rest function are in timeline.js
 
 $(function(){
-    let eventlist=$('#events')
+    let eventList=$('#events-list')
     fetchEvents(function(events){
-        eventlist.empty()
-        for(event of events){
-            eventlist.append(createEventCard(event))
+        eventList.empty()
+        for(task of events){
+            eventList.append(createEventCard(task))
         }
     })
 })

@@ -1,6 +1,6 @@
 const route=require('express').Router()
 
-route.use('/',require('./event'))
+route.use('/event',require('./event'))
 
 exports=module.exports={
     route

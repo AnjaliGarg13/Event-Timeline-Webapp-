@@ -6,7 +6,7 @@ route.get('/',(req,res)=>{
         order:[
             ['startdate',ASC],
             ['starttime',asc]
-            ]
+        ]
     })
         .then((events)=>{
             res.status(200).send(events)
