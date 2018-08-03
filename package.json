@@ -1,15 +1,27 @@
 {
   "name": "csi_webapp",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",
+    "mysql2": "^1.6.1",
+    "sequelize": "^4.38.0",
     "socket.io": "^2.1.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnjaliGarg13/Webapp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AnjaliGarg13/Webapp/issues"
+  },
+  "homepage": "https://github.com/AnjaliGarg13/Webapp#readme",
+  "description": ""
 }
