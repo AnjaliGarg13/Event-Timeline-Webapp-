@@ -9,6 +9,24 @@ const db=new Sequelize('nsitTimeline','organiser','MY@1pass',{
     }
 })
 
+
+const admin=db.define('admin',{
+    id:{
+        type:Sequelize.INTEGER,
+        autoIncrement:true,
+        primaryKey:true
+    },
+    username:{
+        type:Sequelize.STRING,
+        allowNull:false,
+        unique:true
+    },
+    password:{
+        type:Sequelize.STRING,
+        allownull:true
+    },
+})
+
 const event=db.define('events',{
     id:{
         type:Sequelize.INTEGER,
@@ -52,5 +70,6 @@ db.sync()
    .catch(()=>console.log("Error creating database"))
 
 exports=module.exports={
-    event
+    event,
+    admin
 }

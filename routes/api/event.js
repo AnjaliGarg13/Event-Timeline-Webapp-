@@ -1,11 +1,13 @@
 const route=require('express').Router();
 const event=require('../../db').event
+const passport=require('../../passport')
+
 
 route.get('/',(req,res)=>{
     event.findAll({
         order:[
             ['startdate',ASC],
-            ['starttime',asc]
+            ['starttime',ASC]
         ]
     })
         .then((events)=>{
@@ -38,5 +40,10 @@ route.post('/',(req,res)=>{
         })
     })
 })
+
+route.post('/login',passport.authenticate('local',{
+    failureRedirect:'../../public/login',
+    successRedirect:'../../public/add_event'
+}))
 
 exports=module.exports=route
