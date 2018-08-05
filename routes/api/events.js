@@ -1,15 +1,18 @@
 const route=require('express').Router();
 const event=require('../../db').event
+const admin=require('../../db').admin
 const passport=require('../../passport')
 
 
 route.get('/',(req,res)=>{
-    event.findAll({
-        order:[
-            ['startdate',ASC],
-            ['starttime',ASC]
-        ]
-    })
+    event.findAll(
+    //     {
+    //     order:[
+    //         ['startdate',ASC],
+    //         ['starttime',ASC]
+    //     ]
+    // }
+    )
         .then((events)=>{
             res.status(200).send(events)
         })
@@ -32,11 +35,11 @@ route.post('/',(req,res)=>{
         details:req.body.details,
         location:req.body.location,
         link:req.body.link
-    }).then((product)=>{
-        res.status(201).send(product)
+    }).then((event)=>{
+        res.status(201).send(event)
     }).catch((err)=>{
         res.status(501).send({
-            error:"Error adding product\nTry again"
+            error:"Error adding product   Try again"
         })
     })
 })
@@ -45,5 +48,21 @@ route.post('/login',passport.authenticate('local',{
     failureRedirect:'../../public/login',
     successRedirect:'../../public/add_event'
 }))
+
+// route.post('/login',(req,res)=>{
+//     Users.findOne({
+//         where: {
+//             username: req.body.username
+//         }
+//     }).then((user) => {
+//         if (!user) {
+//             return res.send("No such user")
+//         }
+//         if (user.password !== req.body.password) {
+//             return res.send("Wrong password")
+//         }
+//         return res.redirect('../../public/add_event')
+//     })
+// })
 
 exports=module.exports=route

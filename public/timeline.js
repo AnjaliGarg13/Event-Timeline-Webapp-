@@ -1,7 +1,7 @@
 // for functions from complete js files i.e. index.js and add-events.js
 
 function addEventNSIT(name,organiser,details,starttime,startdate,endtime,enddate,location,link,done) {
-    $.post('/api/event',{
+    $.post('/api/events',{
         name:name,
         orgSociety:organiser,
         details:details,
@@ -38,8 +38,7 @@ function createEventCard(Event){
                 <!-- facebook link of event -->
                 <h2 class="event-title" align="left">
                     <a href="${Event.link}">${Event.name}</a></h2>
-                <p class="calender"><i class="fa fa-calender" aria-hidden="true"></i> ${Event.date}</p>
-                <p class="time"><i class="far fa-clock"></i>${Event.enddate-Event.startdate}</p>
+                <p class="time"><i class="far fa-clock"></i>${Event.startdate} to ${Event.enddate}</p>
                 <p class="location"><i class="fa fa-map-marker"></i>  ${Event.location}</p>
             <div class="row">
                 <div class="col-1"></div>

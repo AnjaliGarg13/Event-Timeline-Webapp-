@@ -2,10 +2,15 @@
 
 
 $(function () {
-    let name=$('#username')
+    let username=$('#username')
     let password=$('#password')
     
-    $('#submitbtn').click(function () {
-        
+    $('#submitbtn').onclick(function () {
+        $.post('/api/event/login',{
+            username,
+            password
+        },function (data) {
+            done(data)
+        })
     })
 })

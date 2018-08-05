@@ -27,42 +27,57 @@ can only be accessed by authorised members -->
             </h1>
             <hr style="color: red">
             <br>
-            <div class="form-group row">
+            <div class="row">
                 <div class="col-2"></div>
                 <div class="col-6">
-                    <input type="text" placeholder="Name of event" name="eventname" required>
-                    <br> <br>
-                    <input type="text" placeholder="Organising Society " name="organiser" required>
-                    <br>
-                    <br>
-                    <input type="text" placeholder="Details" name="eventdetails" >
-                    <br> <br>
-                    <div class="row padding">
-                        <div class="col-3">
-                    <div class="lead">   Starting time</div>
-                    <input type="time" placeholder="Start time" name="starttime" required>
-                    <br>
-                    <br>
-                    <input type="date" placeholder="Start date" name="Startdate" required>
-                    <br>
-                    <br>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Name of event" name="eventname" required>
+                            <br>
+                            <br>
                         </div>
-                        <div class="col-3">
-                    <div class="lead">Ending time</div>
-                    <input type="time" placeholder="End time" name="endtime" required>
-                    <br>
-                    <br>
-                    <input type="date" placeholder="End date" name="enddate" required>
-                    <br> <br>
+                        <div class="form-group">
+                            <input type="text" placeholder="Organising Society " name="organiser" required>
+                            <br><br>
                         </div>
-                    </div>
-                    <input type="text" placeholder="Location (enter proper google map link)" name="location" >
-                    <br>
-                    <br>
-
-                    <input type="text" placeholder="Link (fb page of event)" name="link" >
-                    <br>
-                    <br>
+                        <div class="form-group">
+                            <input type="text" placeholder="Details" name="eventdetails" >
+                            <br> <br>
+                        </div>
+                        <div class="row padding">
+                            <div >
+                                <div class="lead">   Starting time</div>
+                                <div class="form-group">
+                                <input type="time" placeholder="Start time" name="starttime" required>
+                                    <br><br>
+                                </div>
+                                <div class="form-group">
+                                    <input type="date" placeholder="Start date" name="Startdate" required>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="form-group">
+                                    <div class="lead">Ending time</div>
+                                    <input type="time" placeholder="End time" name="endtime" required>
+                                    <br><br>
+                                </div>
+                                <div class="form-group">
+                                    <input type="date" placeholder="End date" name="enddate" required>
+                                    <br> <br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Location (enter proper google map link)" name="location" >
+                            <br><br>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Link (fb page of event)" name="link" >
+                            <br><br>
+                        </div>
+                    </form>
                     <div class="submitBtn">
                         <button id="btnadd" type="submit" >ADD EVENT</button>
                     </div>

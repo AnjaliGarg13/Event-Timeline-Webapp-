@@ -24,10 +24,10 @@ const admin=db.define('admin',{
     password:{
         type:Sequelize.STRING,
         allownull:true
-    },
+    }
 })
 
-const event=db.define('events',{
+const event=db.define('event',{
     id:{
         type:Sequelize.INTEGER,
         autoIncrement:true,
