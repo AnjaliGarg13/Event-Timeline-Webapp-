@@ -15,7 +15,7 @@ app.use(session({
 app.use(passport.initialize())
 app.use(passport.session())
 
-app.use('/',express.static(path.join(__dirname,'public')))
+app.use('/',express.static(__dirname))
 app.use('/login',express.static(path.join(__dirname,'loginpage')))
 app.use('/add-event',express.static(path.join(__dirname,'add-e')))
 app.use('/api',require('./routes/api').route)
