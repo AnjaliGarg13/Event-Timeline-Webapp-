@@ -39,8 +39,8 @@ function createEventCard(Event){
             <br>
             <br>
             <div class="date-label ">
-                <span class="month">${Event.startdate.month} </span>
-                <span class="date-number">${Event.startdate.date}</span>
+                <span class="month"><!--${Event.startdate.month}--> </span>
+                <span class="date-number"><!--${Event.enddate}--></span>
             </div>
         </div>
         <div class="details col-10" style="color: grey">

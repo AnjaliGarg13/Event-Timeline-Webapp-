@@ -6,12 +6,12 @@ const event=require('../../db').event
 
 route.get('/',(req,res)=>{
     event.findAll(
-    //     {
-    //     order:[
-    //         ['startdate',ASC],
-    //         ['starttime',ASC]
-    //     ]
-    // }
+        {
+        order:[
+            // ['name','ASC']
+            ['starttime','ASC']
+        ]
+    }
     )
         .then((events)=>{
             res.status(200).send(events)
