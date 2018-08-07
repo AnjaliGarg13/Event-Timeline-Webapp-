@@ -16,6 +16,15 @@ function addEventNSIT(name,organiser,details,starttime,startdate,endtime,enddate
     })
 }
 
+function loginUser(username,password,done) {
+    $.post('/api/login',{
+        username:username,
+        password:password
+    },function (data) {
+        done(data)
+    })
+}
+
 function fetchEvents(done){
     $.get('/api/event',function (data) {
         done(data)
