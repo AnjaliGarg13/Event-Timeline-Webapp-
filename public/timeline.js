@@ -39,25 +39,28 @@ function createEventCard(Event){
             <br>
             <br>
             <div class="date-label ">
-                <span class="month"><!--${Event.startdate.month}--> </span>
-                <span class="date-number"><!--${Event.enddate}--></span>
+                <span class="month">${Event.startdate.split('-')[1]} </span>
+                <span class="date-number">${Event.enddate.split('-')[2].split('T')[0]}</span>
             </div>
         </div>
         <div class="details col-10" style="color: grey">
                 <!-- facebook link of event -->
                 <h2 class="event-title" align="left">
                     <a href="${Event.link}">${Event.name}</a></h2>
-                <p class="time"><i class="far fa-clock"></i>${Event.startdate} to ${Event.enddate}</p>
+                
+                <p class="time"><i class="far fa-clock"></i>  starting time :: ${Event.startdate.split('T')[0]}  -  ${Event.starttime}</p>
+                
+                <p class="time"><i class="far fa-clock"></i>  ending time  ::   ${Event.enddate.split('T')[0]}  -  ${Event.endtime}</p>
                 <p class="location"><i class="fa fa-map-marker"></i>  ${Event.location}</p>
             <div class="row">
                 <div class="col-1"></div>
                 <div class="col-8">
-                    <div class="organiser row">
+                    <div class="organiser row ">
                         <div class="col-2"> Organiser</div>
-                        <div class="col-6"> Details</div>
+                        <div class="col-6">  ${Event.orgSociety}</div>
                     </div>
                     <div class="organiser row">
-                        <div class="col-2"> ${Event.orgSociety}</div>
+                        <div class="col-2">Details</div>
                         <div class="col-6"> ${Event.details}</div>
                     </div>
                 </div>
