@@ -40,3 +40,6 @@ INSERT INTO nsitTimeline VALUES (1,'admin','ADMIN')
 node server
 
 the site will run on http://localhost:1234
+
+
+## added screenshots in a separate directory
