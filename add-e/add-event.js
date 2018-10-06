@@ -23,7 +23,6 @@ $(function(){
             location.val(),
             link.val(),
             function (addedEvent) {
-
                 window.alert("Added "+addedEvent+" to database")
             }
         )
