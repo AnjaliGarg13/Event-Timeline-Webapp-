@@ -1,6 +1,6 @@
 # csi_events_timeline
 
-The frontend part is available at https://anjaligarg13.github.io/Webapp/
+The webapp is available at https://csievent.herokuapp.com/
 
 ## Pre-Requisites
 you will need
