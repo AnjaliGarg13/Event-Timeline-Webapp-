@@ -1,5 +1,7 @@
 # csi_events_timeline
 
+The frontend part is available at https://anjaligarg13.github.io/Webapp/
+
 ## Pre-Requisites
 you will need
 
@@ -39,7 +41,7 @@ INSERT INTO nsitTimeline VALUES (1,'admin','ADMIN')
 ##run the server
 node server
 
-the site will run on http://localhost:1234
+the site will run on http://localhost:3333
 
 
 ## added screenshots in a separate directory
