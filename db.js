@@ -1,7 +1,7 @@
 const Sequelize=require('sequelize')
 
-const db=new Sequelize('nsitTimeline','organiser','MY@1pass',{
-    host:'localhost',
+const db=new Sequelize('sql12260087','sql12260087','G5iaSVauL1',{
+    host:'sql12.freemysqlhosting.net',
     dialect:'mysql',
     pool:{
         min:0,
@@ -65,9 +65,26 @@ const event=db.define('event',{
     }
 })
 
-db.sync()
-   .then(()=>console.log("database has been created"))
-   .catch(()=>console.log("Error creating database"))
+const seed=async()=>{
+    try {
+        db.sync({alter:true})
+        await admin.bulkCreate([
+            {id:1,username:'user1',password:'User1Pass'},
+            {id:1,username:'user2',password:'User2Pass'},
+            {id:1,username:'user3',password:'User3Pass'},
+            {id:1,username:'user4',password:'User4Pass'}
+        ],{
+            ignoreDuplicates:true
+        })
+    }catch (e) {
+        console.log(e)
+    }
+}
+seed()
+//
+// db.sync()
+//    .then(()=>console.log("database has been created"))
+//    .catch(()=>console.log("Error creating database"))
 
 exports=module.exports={
     event,
