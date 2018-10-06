@@ -22,4 +22,4 @@ app.use('/login',express.static(path.join(__dirname,'loginpage')))
 app.use('/add-event',express.static(path.join(__dirname,'add-e')))
 app.use('/api',require('./routes/api').route)
 
-app.listen(SERVER_PORT,()=>console.log('server started '))
+app.listen(SERVER_PORT,()=>console.log('server started at http://localhost:3333'))
