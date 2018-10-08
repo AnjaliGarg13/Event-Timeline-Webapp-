@@ -1,5 +1,25 @@
 // for functions from complete js files i.e. index.js and add-events.js
 
+function searchEvents(date,events) {
+    let eventList=$('#events-list')
+
+    events = events.filter((event)=> {
+        return ((event.startdate).substr(0,10) <= date && (event.enddate).substr(0,10) >= date);
+
+    })
+    console.log(events)
+    eventList.empty()
+    for(event of events){
+        eventList.append(createEventCard(event))
+    }
+}
+
+function fetchEvents(done){
+    $.get('/api/event',function (data) {
+        done(data)
+    })
+}
+
 function addEventNSIT(name,organiser,details,starttime,startdate,endtime,enddate,location,link,done) {
     $.post('/api/events',{
         name:name,
@@ -25,11 +45,7 @@ function loginUser(username,password,done) {
     })
 }
 
-function fetchEvents(done){
-    $.get('/api/event',function (data) {
-        done(data)
-    })
-}
+
 
 function createEventCard(Event){
     return $(`

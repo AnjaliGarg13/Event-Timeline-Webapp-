@@ -9,10 +9,9 @@ route.get('/',(req,res)=>{
         {
         order:[
             // ['name','ASC']
-            ['starttime','ASC']
+            ['startdate','ASC']
         ]
-    }
-    )
+    })
         .then((events)=>{
             res.status(200).send(events)
         })
@@ -36,10 +35,11 @@ route.post('/',(req,res)=>{
         location:req.body.location,
         link:req.body.link
     }).then((event)=>{
-        res.status(201).send(event)
+        // res.status(201).send(event)
+        res.redirect('/')
     }).catch((err)=>{
         res.status(501).send({
-            error:"Error adding product   Try again"
+            error:"Error adding event   Try again"
         })
     })
 })
