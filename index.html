@@ -61,7 +61,7 @@
         <li data-target="#slides" data-slide-to="2" ></li>  -->
     </ul>
     <div class="carousel-inner">
-        <div class="carousel-item active" >
+        <div class="carousel-item active item0" >
             <img src="public/img/home.png" >
             <div class="carousel-caption">
                 <h1 class="display-2">NSIT's TIMELINE</h1>
@@ -70,10 +70,10 @@
                 <button type="button" class="btn btn-primary btn-lg">Get Started</button>
             </div>
         </div>
-        <div class="carousel-item" >
+        <div class="carousel-item item2" >
             <img src="public/img/home2.jpg" >
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item item2">
             <img src="public/img/home3.jpg"  >
         </div>
     </div>
@@ -107,7 +107,7 @@
 <!--- Cards -->
 <div class="container-fluid padding">
     <div class="row text-center padding">
-        <div class="col-md-4 padding cardSection">
+        <div class="col-md-6 col-lg-4 padding cardSection">
             <div class="card">
                 <img class="card-img-top" src="public/img/recreational.jpeg">
                 <div class="card-body">
@@ -118,7 +118,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 padding cardSection">
+        <div class="col-md-6 col-lg-4 padding cardSection">
             <div class="card">
                 <img class="card-img-top" src="public/img/tech.jpeg">
                 <div class="card-body">
@@ -128,7 +128,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 padding cardSection">
+        <div class="col-md-6 col-lg-4 padding cardSection">
             <div class="card">
                 <img class="card-img-top" src="public/img/literary.jpeg">
                 <div class="card-body">
@@ -138,7 +138,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 padding cardSection">
+        <div class="col-md-6 col-lg-4 padding cardSection">
             <div class="card">
                 <img class="card-img-top" src="public/img/non-tech.jpeg">
                 <div class="card-body">
@@ -148,7 +148,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 padding cardSection">
+        <div class="col-md-6 col-lg-4 padding cardSection">
             <div class="card">
                 <img class="card-img-top" src="public/img/automotive.jpeg">
                 <div class="card-body">
@@ -158,7 +158,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 padding cardSection">
+        <div class="col-md-6 col-lg-4 padding cardSection">
             <div class="card">
                 <img class="card-img-top" src="public/img/community.jpeg" >
                 <div class="card-body">
@@ -168,8 +168,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 "></div>
-        <div class="col-md-4 padding cardSection">
+        <div class="col-md-3 col-lg-4"></div>
+        <div class="col-md-6 col-lg-4 padding cardSection">
             <div class="card">
                 <img class="card-img-top" src="public/img/websites.jpeg">
                 <div class="card-body">
@@ -189,7 +189,7 @@
             <h1 class="display-4">Events </h1>
         </div>
         <hr style="width: 75% " >
-        <div  class="col-12">
+        <div  class="col-12 types">
             <button type="button" href="#" class="btn btn-outline-secondary ">Competitions</button>
              <!-- different events can be classified into types and sorted using Jquery restapi-->
             <button type="button" href="#" class="btn btn-outline-secondary">SIG's</button>
@@ -206,16 +206,15 @@
 <!-- find event -->
 <div class="container-fluid padding" id="SearchDate">
     <div class="row">
-        <div class="col-3"></div>
-        <div class="col-3 text-center">
-            <h1>Search Event</h1>
+        <div class="col-sm-0 col-md-2 col-lg-2"></div>
+        <div class="col-sm-4 col-md-4 col-lg-3 text-center">
+            <h2>Search Event</h2>
         </div>
-        <div class="col-2 text-center">
-            <!--<form method="post" action="/api/event/findEvent">-->
+        <div class="col-sm-3 col-md-3 col-lg-2 text-center" style="margin-bottom: 10px">
                 <input type="date" id="searchbox">
-            <!--</form>-->
         </div>
-        <div class="col-1" >
+        <!--<div class="col-xs-3 col-xl-0"></div>-->
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 searchButton" >
             <button class="sear" onclick="myfunction()" type="button">find events</button>
         </div>
 

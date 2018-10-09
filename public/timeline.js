@@ -72,12 +72,13 @@ function createEventCard(Event){
                 <div class="col-1"></div>
                 <div class="col-8">
                     <div class="organiser row ">
-                        <div class="col-2"> Organiser</div>
-                        <div class="col-6">  ${Event.orgSociety}</div>
+                        <div class="col-sm-12 col-md-2"> Organiser</div>
+                        <div class="col-sm-12 col-md-8">  ${Event.orgSociety}</div>
                     </div>
+                    <br>
                     <div class="organiser row">
-                        <div class="col-2">Details</div>
-                        <div class="col-6"> ${Event.details}</div>
+                        <div class="col-sm-12 col-md-2">Details</div>
+                        <div class="col-sm-12 col-md-8"> ${Event.details}</div>
                     </div>
                 </div>
             </div>
