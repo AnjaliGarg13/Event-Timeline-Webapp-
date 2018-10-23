@@ -1,6 +1,6 @@
 const Sequelize=require('sequelize')
 
-const db=new Sequelize('sql12261055','sql12261055','kBqy5TdAc4',{
+const db=new Sequelize('sql12262485','sql12262485','FBa3GxiDZ3',{
     host:'sql12.freemysqlhosting.net',
     dialect:'mysql',
     pool:{
